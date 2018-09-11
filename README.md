@@ -12,7 +12,7 @@ Cocos Creator 在构建的时候支持对脚本进行加密和压缩。
 
 ## 使用说明
 
-命令行使用：
+### 命令行使用
 
 1. 如果使用加密功能，第二个参数设置为 `encrypt`；如果使用解密功能，第二个参数设置为 `decrypt`。此参数为必选参数
 
@@ -38,7 +38,7 @@ Cocos Creator 在构建的时候支持对脚本进行加密和压缩。
     ./edc.py decrypt                             # 解密并解压
     ```
 
-在其他 Python 脚本中引用：
+### 在其他 Python 脚本中引用
 
 1. 下载edc.py文件放到你的脚本目录下，通过 `import edc` 进行导入
 2. 直接调用 `edc.decrypt(is_zip, key, jsc_path)` 或 `edc.encrypt(is_zip, key, js_path)` 即可，可参考 edcExample.py 文件。
