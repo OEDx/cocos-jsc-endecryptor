@@ -1,4 +1,6 @@
-### 简介
+# cocos-jsc-endecryptor
+
+## 简介
 
 Cocos Creator 在构建的时候支持对脚本进行加密和压缩。
 
@@ -8,7 +10,7 @@ Cocos Creator 在构建的时候支持对脚本进行加密和压缩。
 
 本工具弥补了这个不足：提供了与 Cocos Creator 相同的加密、解密、压缩、解压的方法。可以很方便地对构建得到的 jsc 进行解密、解压得到 js ，也可以将 js 压缩、加密回 jsc 。
 
-### 使用说明
+## 使用说明
 
 命令行使用：
 
@@ -43,7 +45,7 @@ Cocos Creator 在构建的时候支持对脚本进行加密和压缩。
 
 > 如果是非交互式脚本，请务必在调用方法时传入有效的参数，并保证其正确性
 
-### 参数说明
+## 参数说明
 
 | 参数名 | 缩写 | 是否必须 | 默认值 |
 | ----- | ----- | ---- | ----- |
@@ -52,7 +54,7 @@ Cocos Creator 在构建的时候支持对脚本进行加密和压缩。
 | --nozip | -n | 否 | false |
 | --path | -p | 否 | - |
 
-### 参考文章
+## 参考文章
 
 - [jsb_global.cpp](https://github.com/cocos-creator/cocos2d-x-lite/blob/develop/cocos/scripting/js-bindings/manual/jsb_global.cpp)
 - [形同虚设的cocos默认加密](http://blog.shuax.com/archives/decryptcocos.html)
