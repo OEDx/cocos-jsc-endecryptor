@@ -10,7 +10,7 @@ Cocos Creator 在构建的时候支持对脚本进行加密和压缩。
 
 本工具弥补了这个不足：提供了与 Cocos Creator 相同的加密、解密、压缩、解压的方法。可以很方便地对构建得到的 jsc 进行解密、解压得到 js ，也可以将 js 压缩、加密回 jsc 。
 
-![](http://onmw7y6f4.bkt.clouddn.com/jsc-endecrypt.png | width=280)
+![](http://onmw7y6f4.bkt.clouddn.com/jsc-endecrypt.png){:width="283"}
 
 ## 使用说明
 
