@@ -7,8 +7,8 @@ import sys
 import os
 
 
-# this is a efficient way to change the code,
-# with no need for wait a long time to rebuild cocos
+# this is an efficient way to change the code,
+# with no need to wait for a long time to rebuild cocos
 
 def edcExample(is_zip, key, jsc_path):
 
@@ -25,7 +25,7 @@ def edcExample(is_zip, key, jsc_path):
         return
 
     # change .js code
-    print 'begin change the code.'
+    print 'begin to change the code.'
     project_file_name = 'decryptOutput/decrypt.js'
     project_file = open(project_file_name)
     changed_project_file = open(prefix + '/projectChanged.js', 'w')
