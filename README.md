@@ -18,11 +18,11 @@ CocosCreator构建时，是否勾选Zip压缩选项决定了使用脚本的参�
 3. 如需设置为非压缩方案，添加 --nozip 或 -n 参数，并设置为 true。如不设置，默认为压缩方案
     > 非压缩方案是指Cocos编译时没有勾选“Zip 压缩”选项
 
-4. 找到CocosCreator编译出来的 .jsc 文件，一般在工程目录下 **build/jsb-default/src** 文件夹下。你可以在脚本运行时，根据提示输入文件的路径来指定对应文件。也可以添加 --path 或 -p 参数，设置为文件路径。如不设置，会在命令行中提示输入
+4. 找到CocosCreator编译出来的 .jsc 文件，一般在工程目录下 **build/jsb-default/src** 文件夹下。你可以在脚本运行时，根据提示输入文件的路径来指定对应文件。也可以添加 --path 或 -p 参数，设置为文件路径。如不设置，会在命令行中提示输入
 
 
 5. 运行脚本即可
-    - encrypt：解密后文件路径为 **decryptOutput/decrypt.js**
+    - encrypt：解密后文件路径为 **decryptOutput/decrypt.js**
     - decrypt: 加密后文件路径为 **encryptOutput/projectChanged.jsc**
 
 6. 举例：
@@ -33,7 +33,7 @@ CocosCreator构建时，是否勾选Zip压缩选项决定了使用脚本的参�
 其他Python脚本中引用：
 
 1. 下载edc.py文件放到你的脚本目录下，通过 **import edc** 进行导入
-2. 直接调用 edc.decrypt(is_zip, key, jsc_path) 或 edc.encrypt(is_zip, key, js_path) 即可，可参考 edcExample.py 文件
+2. 直接调用 edc.decrypt(is_zip, key, jsc_path) 或 edc.encrypt(is_zip, key, js_path) 即可，可参考 edcExample.py 文件
 
 > 如果是非交互式脚本，请务必在调用方法时传入有效的参数，并保证其正确性
 
