@@ -1,11 +1,13 @@
 ### 简介
 
+> 此2.0分支的脚本适用于 CocosCreator 2.0.2 编译导出的 jsc文件，如果你使用的 CocosCreator 为 1.x版本，请切换到master分支。
+
 此脚本用于CocosCreator加密编译后 jsc 文件解密为 js 文件和 js 文件加密为 jsc 文件。
 
 CocosCreator构建时，是否勾选Zip压缩选项决定了使用脚本的参数不同。在CocosCreator的构建面板下图的位置中，查看加密密钥和是否开启Zip压缩。
 ![](https://ws3.sinaimg.cn/large/0069RVTdgy1fuzxib2j7gj30no04ojrl.jpg)
 
-> 此脚本在 macOS High Sierra 10.13.6 系统，Python 2.7 下运行正常，其他环境未测试
+> 此脚本在 macOS High Sierra 10.13.6 系统，Python 2.7 ，CocosCreator 2.0.2 下运行正常，其他环境未测试
 
 ### 使用说明
 

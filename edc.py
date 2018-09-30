@@ -32,15 +32,13 @@ def zip_file(file_name, file_name_in_zip, zip_file_name):
 
 
 def unzip_file(file_name, target_dir):
-    try:
-        z_f = zipfile.ZipFile(file_name, 'r')
-        z_f.extractall(target_dir)
-        z_f.close()
-    except zipfile.BadZipfile:
-        print 'error: unzip failed, please confirm zip opt and key is right.'
-        return False
-    else:
-        return True
+    f_in = gzip.open(file_name, 'rb')
+    f_out = open(target_dir + '/encrypt.js', 'wb')
+    file_content = f_in.read()
+    f_out.write(file_content)
+    f_out.close()
+    f_in.close()
+    return True
 
 
 # the decrypt function contains :
@@ -189,7 +187,7 @@ def main():
     key = ''
     path = ''
 
-    if options.nozip is True:
+    if options.nozip == 'true':
         is_zip = False
     if options.key is not None:
         key = options.key
