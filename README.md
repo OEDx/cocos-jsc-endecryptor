@@ -12,6 +12,8 @@ Cocos Creator 在构建的时候支持对脚本进行加密和压缩。
 
 <img src="https://camo.githubusercontent.com/a958d311700ec37fb2ffb8b943a153ea3a8fd929/687474703a2f2f6f6e6d7737793666342e626b742e636c6f7564646e2e636f6d2f6a73632d656e646563727970742e706e67" alt="" data-canonical-src="http://onmw7y6f4.bkt.clouddn.com/jsc-endecrypt.png" width="283">
 
+> 此 master 分支的脚本适用于 CocosCreator 1.x 编译导出的 jsc文件，如果你使用的 CocosCreator 为 2.0.2 版本，请切换到 v2.0 分支。
+
 ## 使用说明
 
 ### 命令行使用

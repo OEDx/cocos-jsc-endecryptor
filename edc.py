@@ -189,7 +189,7 @@ def main():
     key = ''
     path = ''
 
-    if options.nozip is True:
+    if options.nozip == 'true':
         is_zip = False
     if options.key is not None:
         key = options.key
