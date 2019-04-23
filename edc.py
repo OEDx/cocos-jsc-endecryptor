@@ -26,9 +26,11 @@ def read_file_content(file_name):
 
 
 def zip_file(file_name, file_name_in_zip, zip_file_name):
-    z_f = zipfile.ZipFile(zip_file_name, 'w')
-    z_f.write(file_name, file_name_in_zip, zipfile.ZIP_DEFLATED)
-    z_f.close()
+    f_in = open(file_name, 'rb')
+    f_out = gzip.open(zip_file_name, 'wb')
+    f_out.writelines(f_in)
+    f_out.close()
+    f_in.close()
 
 
 def unzip_file(file_name, target_dir):
